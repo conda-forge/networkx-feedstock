@@ -14,6 +14,18 @@ manipulation, and study of the structure, dynamics, and functions of complex
 networks.
 
 
+Current build status
+====================
+
+Linux: [![Circle CI](https://circleci.com/gh/conda-forge/networkx-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/networkx-feedstock)
+OSX: [![TravisCI](https://travis-ci.org/conda-forge/networkx-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/networkx-feedstock)
+Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/networkx-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/networkx-feedstock/branch/master)
+
+Current release info
+====================
+Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/networkx/badges/version.svg)](https://anaconda.org/conda-forge/networkx)
+Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/networkx/badges/downloads.svg)](https://anaconda.org/conda-forge/networkx)
+
 Installing networkx
 ===================
 
@@ -34,7 +46,6 @@ It is possible to list all of the versions of `networkx` available on your platf
 ```
 conda search networkx --channel conda-forge
 ```
-
 
 
 About conda-forge
@@ -70,18 +81,6 @@ Terminology
 
 **conda-forge** - the place where the feedstock and smithy live and work to
                   produce the finished article (built conda distributions)
-
-Current build status
-====================
-
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/networkx-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/networkx-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/networkx-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/networkx-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/networkx-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/networkx-feedstock/branch/master)
-
-Current release info
-====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/networkx/badges/version.svg)](https://anaconda.org/conda-forge/networkx)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/networkx/badges/downloads.svg)](https://anaconda.org/conda-forge/networkx)
 
 
 Updating networkx-feedstock
