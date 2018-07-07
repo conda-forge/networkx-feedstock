@@ -17,14 +17,15 @@ networks.
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/networkx-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/networkx-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/networkx-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/networkx-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/networkx-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/networkx-feedstock/branch/master)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/networkx-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/networkx-feedstock)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/networkx/badges/version.svg)](https://anaconda.org/conda-forge/networkx)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/networkx/badges/downloads.svg)](https://anaconda.org/conda-forge/networkx)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-networkx-green.svg)](https://anaconda.org/conda-forge/networkx) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/networkx.svg)](https://anaconda.org/conda-forge/networkx) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/networkx.svg)](https://anaconda.org/conda-forge/networkx) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/networkx.svg)](https://anaconda.org/conda-forge/networkx) |
 
 Installing networkx
 ===================
