@@ -1,6 +1,6 @@
 {% set name = "networkx" %}
-{% set version = "2.1" %}
-{% set sha256 = "64272ca418972b70a196cb15d9c85a5a6041f09a2f32e0d30c0255f25d458bb1" %}
+{% set version = "2.2" %}
+{% set sha256 = "45e56f7ab6fe81652fb4bc9f44faddb0e9025f469f602df14e3b2551c2ea5c8b" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +12,7 @@ source:
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
