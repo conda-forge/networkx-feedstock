@@ -12,8 +12,8 @@ source:
 
 build:
   noarch: python
-  number: 0
-  script: python -m pip install --no-deps --ignore-installed .
+  number: 1
+  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
 
 requirements:
   host:
@@ -23,7 +23,7 @@ requirements:
   run:
     - python
     - setuptools
-    - decorator >=3.4.0
+    - decorator >=4.3.0
 
 test:
   imports:
@@ -41,6 +41,7 @@ test:
     - networkx.algorithms.flow
     - networkx.algorithms.isomorphism
     - networkx.algorithms.link_analysis
+    - networkx.algorithms.node_classification
     - networkx.algorithms.operators
     - networkx.algorithms.shortest_paths
     - networkx.algorithms.traversal
@@ -56,7 +57,7 @@ test:
     - networkx.utils
 
   requires:
-    - nose >=0.10.1
+    - nose >=1.3.7
 
 about:
   home: https://networkx.github.io/
@@ -69,7 +70,7 @@ about:
     manipulation, and study of the structure, dynamics, and functions of complex
     networks.
   doc_url: http://networkx.github.io/documentation.html
-  dev_url: https://github.com/networkx
+  dev_url: https://github.com/networkx/networkx
 
 extra:
   recipe-maintainers:
