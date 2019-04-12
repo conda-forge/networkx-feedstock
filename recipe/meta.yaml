@@ -50,8 +50,6 @@ test:
     - networkx.linalg
     - networkx.readwrite
     - networkx.readwrite.json_graph
-    - networkx.testing
-    - networkx.tests
     - networkx.utils
 
 about:
