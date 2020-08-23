@@ -5,7 +5,7 @@ Home: https://networkx.github.io/
 
 Package license: BSD-3-Clause
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Python package for creating and manipulating complex networks
 
