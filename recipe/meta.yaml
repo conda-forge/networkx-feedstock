@@ -11,15 +11,15 @@ source:
 build:
   number: 0
   noarch: python
-  script: {{ PYTHON }} -m pip install . --no-deps -vv
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python >=3.5
+    - python >=3.6
     - pip
 
   run:
-    - python >=3.5
+    - python >=3.6
     - setuptools
     - decorator >=4.3.0
 
@@ -51,6 +51,10 @@ test:
     - networkx.readwrite
     - networkx.readwrite.json_graph
     - networkx.utils
+  commands:
+    - pip check
+  requires:
+    - pip
 
 about:
   home: https://networkx.github.io/
