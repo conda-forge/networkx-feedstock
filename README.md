@@ -5,9 +5,13 @@ Home: https://networkx.github.io/
 
 Package license: BSD-3-Clause
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/networkx-feedstock/blob/master/LICENSE.txt)
 
 Summary: Python package for creating and manipulating complex networks
+
+Development: https://github.com/networkx/networkx
+
+Documentation: http://networkx.github.io/documentation.html
 
 NetworkX is a Python language software package for the creation,
 manipulation, and study of the structure, dynamics, and functions of complex
@@ -111,14 +115,15 @@ build distinct package versions.
 
 In order to produce a uniquely identifiable distribution:
  * If the version of a package **is not** being increased, please add or increase
-   the [``build/number``](https://conda.io/docs/user-guide/tasks/build-packages/define-metadata.html#build-number-and-string).
+   the [``build/number``](https://docs.conda.io/projects/conda-build/en/latest/resources/define-metadata.html#build-number-and-string).
  * If the version of a package **is** being increased, please remember to return
-   the [``build/number``](https://conda.io/docs/user-guide/tasks/build-packages/define-metadata.html#build-number-and-string)
+   the [``build/number``](https://docs.conda.io/projects/conda-build/en/latest/resources/define-metadata.html#build-number-and-string)
    back to 0.
 
 Feedstock Maintainers
 =====================
 
+* [@FelixMoelder](https://github.com/FelixMoelder/)
 * [@SylvainCorlay](https://github.com/SylvainCorlay/)
 * [@ocefpaf](https://github.com/ocefpaf/)
 * [@synapticarbors](https://github.com/synapticarbors/)
