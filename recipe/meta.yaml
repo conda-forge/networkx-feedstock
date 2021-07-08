@@ -1,4 +1,4 @@
-{% set version = "2.5.1" %}
+{% set version = "2.6.1" %}
 
 package:
   name: networkx
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/n/networkx/networkx-{{ version }}.tar.gz
-  sha256: 109cd585cac41297f71103c3c42ac6ef7379f29788eb54cb751be5a663bb235a
+  sha256: bf4cb807d1bccf1593c7d0742d9127d9e04e021867299082658b0fc3907924e8
 
 build:
   number: 0
