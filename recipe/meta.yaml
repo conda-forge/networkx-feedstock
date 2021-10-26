@@ -9,7 +9,7 @@ source:
   sha256: c0946ed31d71f1b732b5aaa6da5a0388a345019af232ce2f49c766e2d6795c51
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -20,7 +20,6 @@ requirements:
 
   run:
     - python >=3.6
-    - decorator >=4.3.0,<5
     - numpy >=1.19
     - scipy >=1.5,!=1.6.1
     - matplotlib-base >=3.3
