@@ -9,21 +9,21 @@ source:
   sha256: d1194ba753e5eed07cdecd1d23c5cd7a3c772099bd8dbd2fea366788cf4de7ba
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.8
     - pip
 
   run:
-    - python >=3.6
+    - python >=3.8
     - numpy >=1.19
-    - scipy >=1.5,!=1.6.1
-    - matplotlib-base >=3.3
-    - pandas >=1.1
+    - scipy >=1.8
+    - matplotlib-base >=3.4
+    - pandas >=1.3
 
 test:
   imports:
