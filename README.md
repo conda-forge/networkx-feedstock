@@ -153,6 +153,7 @@ Feedstock Maintainers
 =====================
 
 * [@FelixMoelder](https://github.com/FelixMoelder/)
+* [@MridulS](https://github.com/MridulS/)
 * [@SylvainCorlay](https://github.com/SylvainCorlay/)
 * [@ocefpaf](https://github.com/ocefpaf/)
 * [@synapticarbors](https://github.com/synapticarbors/)
