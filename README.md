@@ -1,11 +1,11 @@
-About networkx
-==============
+About networkx-feedstock
+========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/networkx-feedstock/blob/main/LICENSE.txt)
 
 Home: https://networkx.github.io/
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/networkx-feedstock/blob/main/LICENSE.txt)
 
 Summary: Python package for creating and manipulating complex networks
 
@@ -156,5 +156,6 @@ Feedstock Maintainers
 * [@MridulS](https://github.com/MridulS/)
 * [@SylvainCorlay](https://github.com/SylvainCorlay/)
 * [@ocefpaf](https://github.com/ocefpaf/)
+* [@stefanv](https://github.com/stefanv/)
 * [@synapticarbors](https://github.com/synapticarbors/)
 
