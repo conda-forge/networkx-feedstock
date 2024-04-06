@@ -9,16 +9,16 @@ source:
   sha256: 0c127d8b2f4865f59ae9cb8aafcd60b5c70f3241ebd66f7defad7c4ab90126c9
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python >=3.9
+    - python >=3.10
     - pip
   run:
-    - python >=3.9
+    - python >=3.10
   run_constrained:
     - numpy >=1.22
     - scipy >=1.9,!=1.11.0,!=1.11.1
