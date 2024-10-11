@@ -9,7 +9,7 @@ source:
   sha256: 1269b90f8f0d3a4095f016f49650f35ac169729f49b69d0572b2bb142748162b
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
@@ -21,10 +21,10 @@ requirements:
   run:
     - python >=3.10
   run_constrained:
-    - numpy >=1.22
-    - scipy >=1.9,!=1.11.0,!=1.11.1
-    - matplotlib >=3.5
-    - pandas >=1.4
+    - numpy >=1.24
+    - scipy >=1.10,!=1.11.0,!=1.11.1
+    - matplotlib >=3.7
+    - pandas >=2.0
 
 test:
   imports:
