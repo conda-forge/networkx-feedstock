@@ -3,7 +3,7 @@ About networkx-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/networkx-feedstock/blob/main/LICENSE.txt)
 
-Home: https://networkx.github.io/
+Home: https://networkx.org/
 
 Package license: BSD-3-Clause
 
@@ -16,7 +16,6 @@ Documentation: https://networkx.org/documentation/stable/
 NetworkX is a Python language software package for the creation,
 manipulation, and study of the structure, dynamics, and functions of complex
 networks.
-
 
 Current build status
 ====================
@@ -154,6 +153,7 @@ Feedstock Maintainers
 
 * [@FelixMoelder](https://github.com/FelixMoelder/)
 * [@MridulS](https://github.com/MridulS/)
+* [@Schefflera-Arboricola](https://github.com/Schefflera-Arboricola/)
 * [@SylvainCorlay](https://github.com/SylvainCorlay/)
 * [@ocefpaf](https://github.com/ocefpaf/)
 * [@stefanv](https://github.com/stefanv/)
