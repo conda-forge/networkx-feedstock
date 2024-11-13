@@ -1,7 +1,8 @@
 context:
   name: "networkx"
   version: 3.4.2
-
+  python_min: "3.10"
+  
 package:
   name: ${{ name }}
   version: ${{ version }}
@@ -17,11 +18,11 @@ build:
 
 requirements:
   host:
-    - python >=3.10
+    - python ${{ python_min }}
     - setuptools >=61.2
     - pip
   run:
-    - python >=3.10
+    - python >=${{ python_min }}
   run_constraints:
     - numpy >=1.24
     - scipy >=1.10,!=1.11.0,!=1.11.1
@@ -29,34 +30,38 @@ requirements:
     - pandas >=2.0
 
 tests:
-  - python:
-      imports:
-        - networkx
-        - networkx.algorithms
-        - networkx.algorithms.assortativity
-        - networkx.algorithms.bipartite
-        - networkx.algorithms.centrality
-        - networkx.algorithms.community
-        - networkx.algorithms.components
-        - networkx.algorithms.connectivity
-        - networkx.algorithms.coloring
-        - networkx.algorithms.flow
-        - networkx.algorithms.minors
-        - networkx.algorithms.traversal
-        - networkx.algorithms.isomorphism
-        - networkx.algorithms.shortest_paths
-        - networkx.algorithms.link_analysis
-        - networkx.algorithms.operators
-        - networkx.algorithms.approximation
-        - networkx.algorithms.tree
-        - networkx.classes
-        - networkx.generators
-        - networkx.drawing
-        - networkx.linalg
-        - networkx.readwrite
-        - networkx.readwrite.json_graph
-        - networkx.tests
-        - networkx.utils
+  - script: |
+      python -c "import networkx"
+      python -c "import networkx.algorithms"
+      python -c "import networkx.algorithms.assortativity"
+      python -c "import networkx.algorithms.bipartite"
+      python -c "import networkx.algorithms.centrality"
+      python -c "import networkx.algorithms.community"
+      python -c "import networkx.algorithms.components"
+      python -c "import networkx.algorithms.connectivity"
+      python -c "import networkx.algorithms.coloring"
+      python -c "import networkx.algorithms.flow"
+      python -c "import networkx.algorithms.minors"
+      python -c "import networkx.algorithms.traversal"
+      python -c "import networkx.algorithms.isomorphism"
+      python -c "import networkx.algorithms.shortest_paths"
+      python -c "import networkx.algorithms.link_analysis"
+      python -c "import networkx.algorithms.operators"
+      python -c "import networkx.algorithms.link_analysis"
+      python -c "import networkx.algorithms.approximation"
+      python -c "import networkx.algorithms.tree"
+      python -c "import networkx.classes"
+      python -c "import networkx.generators"
+      python -c "import networkx.drawing"
+      python -c "import networkx.linalg"
+      python -c "import networkx.readwrite"
+      python -c "import networkx.readwrite.json_graph"
+      python -c "import networkx.tests"
+      python -c "import networkx.utils"
+
+    requirements:
+      run:
+        - python ${{ python_min }}
 
 about:
   license: BSD-3-Clause
