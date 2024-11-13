@@ -1,0 +1,86 @@
+context:
+  name: "networkx"
+  version: 3.4.2
+  python_min: "3.10"
+  
+package:
+  name: ${{ name }}
+  version: ${{ version }}
+
+source:
+  url: https://pypi.org/packages/source/n/${{ name }}/${{ name }}-${{ version }}.tar.gz
+  sha256: 307c3669428c5362aab27c8a1260aa8f47c4e91d3891f48be0141738d8d053e1
+
+build:
+  number: 2
+  noarch: python
+  script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
+
+requirements:
+  host:
+    - python ${{ python_min }}
+    - setuptools >=61.2
+    - pip
+  run:
+    - python >=${{ python_min }}
+  run_constraints:
+    - numpy >=1.24
+    - scipy >=1.10,!=1.11.0,!=1.11.1
+    - matplotlib >=3.7
+    - pandas >=2.0
+
+tests:
+  - script: |
+      python -c "import networkx"
+      python -c "import networkx.algorithms"
+      python -c "import networkx.algorithms.assortativity"
+      python -c "import networkx.algorithms.bipartite"
+      python -c "import networkx.algorithms.centrality"
+      python -c "import networkx.algorithms.community"
+      python -c "import networkx.algorithms.components"
+      python -c "import networkx.algorithms.connectivity"
+      python -c "import networkx.algorithms.coloring"
+      python -c "import networkx.algorithms.flow"
+      python -c "import networkx.algorithms.minors"
+      python -c "import networkx.algorithms.traversal"
+      python -c "import networkx.algorithms.isomorphism"
+      python -c "import networkx.algorithms.shortest_paths"
+      python -c "import networkx.algorithms.link_analysis"
+      python -c "import networkx.algorithms.operators"
+      python -c "import networkx.algorithms.link_analysis"
+      python -c "import networkx.algorithms.approximation"
+      python -c "import networkx.algorithms.tree"
+      python -c "import networkx.classes"
+      python -c "import networkx.generators"
+      python -c "import networkx.drawing"
+      python -c "import networkx.linalg"
+      python -c "import networkx.readwrite"
+      python -c "import networkx.readwrite.json_graph"
+      python -c "import networkx.tests"
+      python -c "import networkx.utils"
+
+    requirements:
+      run:
+        - python ${{ python_min }}
+
+about:
+  license: BSD-3-Clause
+  license_file: LICENSE.txt
+  summary: Python package for creating and manipulating complex networks
+  description: |
+    NetworkX is a Python language software package for the creation,
+    manipulation, and study of the structure, dynamics, and functions of complex
+    networks.
+  homepage: https://networkx.org/
+  repository: https://github.com/networkx/networkx
+  documentation: https://networkx.org/documentation/stable/
+
+extra:
+  recipe-maintainers:
+    - Schefflera-Arboricola
+    - stefanv
+    - synapticarbors
+    - ocefpaf
+    - SylvainCorlay
+    - FelixMoelder
+    - MridulS
