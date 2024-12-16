@@ -5,7 +5,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/n/networkx/networkx-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/n/networkx/networkx-{{ version }}.tar.gz
   sha256: c0946ed31d71f1b732b5aaa6da5a0388a345019af232ce2f49c766e2d6795c51
 
 build:
