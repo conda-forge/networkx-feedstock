@@ -1,6 +1,6 @@
 context:
   name: "networkx"
-  version: "3.6.1"
+  version: "3.7"
   python_min: "3.11"
 package:
   name: ${{ name }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/n/${{ name }}/${{ name }}-${{ version }}.tar.gz
-  sha256: 26b7c357accc0c8cde558ad486283728b65b6a95d85ee1cd66bafab4c8168509
+  sha256: fd77a511bd90f39f3d016351345b52cf5319b813bdca01de3f755d3cca62e96a
 
 build:
   number: 0
